@@ -1,0 +1,110 @@
+!<arch>
+__.PKGDEF       0           0     0     644     12064     `
+go object darwin amd64 go1.6.2 X:none
+build id "2c335088942f67fad87d3fe2d106699075ecbc17"
+
+$$
+package typesutil
+	import types "go/types"
+	import strings "strings"
+	import token "go/token" // indirect
+	type @"go/token".Pos int
+	func (@"go/token".pÂ·2 @"go/token".Pos) IsValid () (? bool) { return @"go/token".pÂ·2 != @"go/token".Pos(0x0) }
+	type @"go/types".Type interface { String() (? string); Underlying() (? @"go/types".Type) }
+	type @"go/types".Object interface { Exported() (? bool); Id() (? string); Name() (? string); Parent() (? *@"go/types".Scope); Pkg() (? *@"go/types".Package); Pos() (? @"go/token".Pos); String() (? string); Type() (? @"go/types".Type); @"go/types".order() (? uint32); @"go/types".sameId(@"go/types".pkg *@"go/types".Package, @"go/types".name string) (? bool); @"go/types".scopePos() (? @"go/token".Pos); @"go/types".setOrder(? uint32); @"go/types".setParent(? *@"go/types".Scope); @"go/types".setScopePos(@"go/types".pos @"go/token".Pos) }
+	import io "io" // indirect
+	type @"io".Writer interface { Write(@"io".p []byte) (@"io".n int, @"io".err error) }
+	type @"go/types".Scope struct { @"go/types".parent *@"go/types".Scope; @"go/types".children []*@"go/types".Scope; @"go/types".elems map[string]@"go/types".Object; @"go/types".pos @"go/token".Pos; @"go/types".end @"go/token".Pos; @"go/types".comment string }
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x32") Child (@"go/types".iÂ·3 int) (? *@"go/types".Scope) { return @"go/types".sÂ·2.@"go/types".children[@"go/types".iÂ·3] }
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") Contains (@"go/types".posÂ·3 @"go/token".Pos) (? bool) { return @"go/types".sÂ·2.@"go/types".pos <= @"go/types".posÂ·3 && @"go/types".posÂ·3 < @"go/types".sÂ·2.@"go/types".end }
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") End () (? @"go/token".Pos) { return @"go/types".sÂ·2.@"go/types".end }
+	func (@"go/types".sÂ·2 *@"go/types".Scope) Innermost (@"go/types".posÂ·3 @"go/token".Pos) (? *@"go/types".Scope)
+	func (@"go/types".sÂ·2 *@"go/types".Scope) Insert (@"go/types".objÂ·3 @"go/types".Object) (? @"go/types".Object)
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") Len () (? int) { return len(@"go/types".sÂ·2.@"go/types".elems) }
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") Lookup (@"go/types".nameÂ·3 string "esc:0x1") (? @"go/types".Object) { return @"go/types".sÂ·2.@"go/types".elems[@"go/types".nameÂ·3] }
+	func (@"go/types".sÂ·3 *@"go/types".Scope "esc:0x12") LookupParent (@"go/types".nameÂ·4 string "esc:0x1", @"go/types".posÂ·5 @"go/token".Pos) (? *@"go/types".Scope, ? @"go/types".Object)
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") Names () (? []string)
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") NumChildren () (? int) { return len(@"go/types".sÂ·2.@"go/types".children) }
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x22") Parent () (? *@"go/types".Scope) { return @"go/types".sÂ·2.@"go/types".parent }
+	func (@"go/types".sÂ·2 *@"go/types".Scope "esc:0x1") Pos () (? @"go/token".Pos) { return @"go/types".sÂ·2.@"go/types".pos }
+	func (@"go/types".sÂ·2 *@"go/types".Scope) String () (? string)
+	func (@"go/types".sÂ·1 *@"go/types".Scope) WriteTo (@"go/types".wÂ·2 @"io".Writer, @"go/types".nÂ·3 int, @"go/types".recurseÂ·4 bool)
+	type @"go/types".Package struct { @"go/types".path string; @"go/types".name string; @"go/types".scope *@"go/types".Scope; @"go/types".complete bool; @"go/types".imports []*@"go/types".Package; @"go/types".fake bool }
+	func (@"go/types".pkgÂ·2 *@"go/types".Package "esc:0x1") Complete () (? bool) { return @"go/types".pkgÂ·2.@"go/types".complete }
+	func (@"go/types".pkgÂ·2 *@"go/types".Package "esc:0x22") Imports () (? []*@"go/types".Package) { return @"go/types".pkgÂ·2.@"go/types".imports }
+	func (@"go/types".pkgÂ·1 *@"go/types".Package "esc:0x1") MarkComplete () { @"go/types".pkgÂ·1.@"go/types".complete = bool(true) }
+	func (@"go/types".pkgÂ·2 *@"go/types".Package "esc:0x22") Name () (? string) { return @"go/types".pkgÂ·2.@"go/types".name }
+	func (@"go/types".pkgÂ·2 *@"go/types".Package "esc:0x22") Path () (? string) { return @"go/types".pkgÂ·2.@"go/types".path }
+	func (@"go/types".pkgÂ·2 *@"go/types".Package "esc:0x22") Scope () (? *@"go/types".Scope) { return @"go/types".pkgÂ·2.@"go/types".scope }
+	func (@"go/types".pkgÂ·1 *@"go/types".Package "esc:0x1") SetImports (@"go/types".listÂ·2 []*@"go/types".Package) { @"go/types".pkgÂ·1.@"go/types".imports = @"go/types".listÂ·2 }
+	func (@"go/types".pkgÂ·1 *@"go/types".Package "esc:0x1") SetName (@"go/types".nameÂ·2 string) { @"go/types".pkgÂ·1.@"go/types".name = @"go/types".nameÂ·2 }
+	func (@"go/types".pkgÂ·2 *@"go/types".Package "esc:0x9") String () (? string)
+	func @"".IsJsPackage (@"".pkgÂ·2 *@"go/types".Package "esc:0x1") (? bool) { return @"".pkgÂ·2 != nil && (@"".pkgÂ·2.Path() == string("github.com/gopherjs/gopherjs/js") || @"strings".HasSuffix(@"".pkgÂ·2.Path(), string("/vendor/github.com/gopherjs/gopherjs/js"))) }
+	func @"".IsJsObject (@"".tÂ·2 @"go/types".Type "esc:0x1") (? bool) {  var @"".ptrÂ·3 *@"go/types".Pointer; var @"".isPtrÂ·4 bool; @"".ptrÂ·3, @"".isPtrÂ·4 = @"".tÂ·2.(*@"go/types".Pointer); if !@"".isPtrÂ·4 { return bool(false) };  var @"".namedÂ·5 *@"go/types".Named; var @"".isNamedÂ·6 bool; @"".namedÂ·5, @"".isNamedÂ·6 = @"".ptrÂ·3.Elem().(*@"go/types".Named); return @"".isNamedÂ·6 && @"".IsJsPackage(@"".namedÂ·5.Obj().@"go/types".object.Pkg()) && @"".namedÂ·5.Obj().@"go/types".object.Name() == string("Object") }
+	func @"".init ()
+	func @"strings".HasSuffix (@"strings".sÂ·2 string "esc:0x1", @"strings".suffixÂ·3 string "esc:0x1") (? bool) { return len(@"strings".sÂ·2) >= len(@"strings".suffixÂ·3) && @"strings".sÂ·2[len(@"strings".sÂ·2) - len(@"strings".suffixÂ·3):] == @"strings".suffixÂ·3 }
+	type @"go/types".Pointer struct { @"go/types".base @"go/types".Type }
+	func (@"go/types".pÂ·2 *@"go/types".Pointer "esc:0x22") Elem () (? @"go/types".Type) { return @"go/types".pÂ·2.@"go/types".base }
+	func (@"go/types".tÂ·2 *@"go/types".Pointer) String () (? string)
+	func (@"go/types".tÂ·2 *@"go/types".Pointer "esc:0x12") Underlying () (? @"go/types".Type) { return @"go/types".tÂ·2 }
+	type @"go/types".object struct { @"go/types".parent *@"go/types".Scope; @"go/types".pos @"go/token".Pos; @"go/types".pkg *@"go/types".Package; @"go/types".name string; @"go/types".typ @"go/types".Type; @"go/types".order_ uint32; @"go/types".scopePos_ @"go/token".Pos }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x1") Exported () (? bool)
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x22") Id () (? string)
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x22") Name () (? string) { return @"go/types".objÂ·2.@"go/types".name }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x22") Parent () (? *@"go/types".Scope) { return @"go/types".objÂ·2.@"go/types".parent }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x22") Pkg () (? *@"go/types".Package) { return @"go/types".objÂ·2.@"go/types".pkg }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x1") Pos () (? @"go/token".Pos) { return @"go/types".objÂ·2.@"go/types".pos }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x1") String () (? string)
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x22") Type () (? @"go/types".Type) { return @"go/types".objÂ·2.@"go/types".typ }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x1") @"go/types".order () (? uint32) { return @"go/types".objÂ·2.@"go/types".order_ }
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x1") @"go/types".sameId (@"go/types".pkgÂ·3 *@"go/types".Package "esc:0x1", @"go/types".nameÂ·4 string "esc:0x1") (? bool)
+	func (@"go/types".objÂ·2 *@"go/types".object "esc:0x1") @"go/types".scopePos () (? @"go/token".Pos) { return @"go/types".objÂ·2.@"go/types".scopePos_ }
+	func (@"go/types".objÂ·1 *@"go/types".object "esc:0x1") @"go/types".setOrder (@"go/types".orderÂ·2 uint32)
+	func (@"go/types".objÂ·1 *@"go/types".object "esc:0x1") @"go/types".setParent (@"go/types".parentÂ·2 *@"go/types".Scope) { @"go/types".objÂ·1.@"go/types".parent = @"go/types".parentÂ·2 }
+	func (@"go/types".objÂ·1 *@"go/types".object "esc:0x1") @"go/types".setScopePos (@"go/types".posÂ·2 @"go/token".Pos) { @"go/types".objÂ·1.@"go/types".scopePos_ = @"go/types".posÂ·2 }
+	type @"go/types".TypeName struct { @"go/types".? @"go/types".object }
+	func (@"go/types".objÂ·2 *@"go/types".TypeName) String () (? string)
+	type @"go/types".Func struct { @"go/types".? @"go/types".object }
+	func (@"go/types".objÂ·2 *@"go/types".Func "esc:0x9") FullName () (? string)
+	func (@"go/types".objÂ·2 *@"go/types".Func "esc:0x32") Scope () (? *@"go/types".Scope) { return @"go/types".objÂ·2.@"go/types".object.@"go/types".typ.(*@"go/types".Signature).@"go/types".scope }
+	func (@"go/types".objÂ·2 *@"go/types".Func) String () (? string)
+	type @"go/types".Named struct { @"go/types".obj *@"go/types".TypeName; @"go/types".underlying @"go/types".Type; @"go/types".methods []*@"go/types".Func }
+	func (@"go/types".tÂ·1 *@"go/types".Named "esc:0x9") AddMethod (@"go/types".mÂ·2 *@"go/types".Func)
+	func (@"go/types".tÂ·2 *@"go/types".Named "esc:0x32") Method (@"go/types".iÂ·3 int) (? *@"go/types".Func) { return @"go/types".tÂ·2.@"go/types".methods[@"go/types".iÂ·3] }
+	func (@"go/types".tÂ·2 *@"go/types".Named "esc:0x1") NumMethods () (? int) { return len(@"go/types".tÂ·2.@"go/types".methods) }
+	func (@"go/types".tÂ·2 *@"go/types".Named "esc:0x22") Obj () (? *@"go/types".TypeName) { return @"go/types".tÂ·2.@"go/types".obj }
+	func (@"go/types".tÂ·1 *@"go/types".Named "esc:0x1") SetUnderlying (@"go/types".underlyingÂ·2 @"go/types".Type)
+	func (@"go/types".tÂ·2 *@"go/types".Named) String () (? string)
+	func (@"go/types".tÂ·2 *@"go/types".Named "esc:0x22") Underlying () (? @"go/types".Type) { return @"go/types".tÂ·2.@"go/types".underlying }
+	func (@"go/types".nÂ·1 *@"go/types".Named "esc:0x1") @"go/types".setUnderlying (@"go/types".typÂ·2 @"go/types".Type) { if @"go/types".nÂ·1 != nil { @"go/types".nÂ·1.@"go/types".underlying = @"go/types".typÂ·2 } }
+	type @"go/types".Var struct { @"go/types".? @"go/types".object; @"go/types".anonymous bool; @"go/types".visited bool; @"go/types".isField bool; @"go/types".used bool }
+	func (@"go/types".objÂ·2 *@"go/types".Var "esc:0x1") Anonymous () (? bool) { return @"go/types".objÂ·2.@"go/types".anonymous }
+	func (@"go/types".objÂ·2 *@"go/types".Var "esc:0x1") IsField () (? bool) { return @"go/types".objÂ·2.@"go/types".isField }
+	func (@"go/types".objÂ·2 *@"go/types".Var) String () (? string)
+	type @"go/types".Tuple struct { @"go/types".vars []*@"go/types".Var }
+	func (@"go/types".tÂ·2 *@"go/types".Tuple "esc:0x32") At (@"go/types".iÂ·3 int) (? *@"go/types".Var) { return @"go/types".tÂ·2.@"go/types".vars[@"go/types".iÂ·3] }
+	func (@"go/types".tÂ·2 *@"go/types".Tuple "esc:0x1") Len () (? int) { if @"go/types".tÂ·2 != nil { return len(@"go/types".tÂ·2.@"go/types".vars) }; return int(0x0) }
+	func (@"go/types".tÂ·2 *@"go/types".Tuple) String () (? string)
+	func (@"go/types".tÂ·2 *@"go/types".Tuple "esc:0x12") Underlying () (? @"go/types".Type) { return @"go/types".tÂ·2 }
+	type @"go/types".Signature struct { @"go/types".scope *@"go/types".Scope; @"go/types".recv *@"go/types".Var; @"go/types".params *@"go/types".Tuple; @"go/types".results *@"go/types".Tuple; @"go/types".variadic bool }
+	func (@"go/types".sÂ·2 *@"go/types".Signature "esc:0x22") Params () (? *@"go/types".Tuple) { return @"go/types".sÂ·2.@"go/types".params }
+	func (@"go/types".sÂ·2 *@"go/types".Signature "esc:0x22") Recv () (? *@"go/types".Var) { return @"go/types".sÂ·2.@"go/types".recv }
+	func (@"go/types".sÂ·2 *@"go/types".Signature "esc:0x22") Results () (? *@"go/types".Tuple) { return @"go/types".sÂ·2.@"go/types".results }
+	func (@"go/types".tÂ·2 *@"go/types".Signature) String () (? string)
+	func (@"go/types".tÂ·2 *@"go/types".Signature "esc:0x12") Underlying () (? @"go/types".Type) { return @"go/types".tÂ·2 }
+	func (@"go/types".sÂ·2 *@"go/types".Signature "esc:0x1") Variadic () (? bool) { return @"go/types".sÂ·2.@"go/types".variadic }
+
+$$
+_go_.o          0           0     0     644     5181      `
+go object darwin amd64 go1.6.2 X:none
+
+!
+  go13ldgo/types.astrings.a ş"".IsJsPackage  à  àeH‹%    H;a†M  HƒìxH‹”$€   1íH9ê„)  1ÛHƒú „  H‹
+H‹BH‰L$8H‰D$@HƒøuLH‰L$hH‰$H‰D$pH‰D$H-    H‰l$HÇD$   è    H‹”$€   ¶\$ €û tÆ„$ˆ   HƒÄxÃ1ÛHƒú „    H‹:H‹JH‰|$(H‰L$0H5    HÇÀ'   H9Á|xH‰ËH)ÃH‰ÍH‰L$PH9Ëw^H)İI‰øH‰|$HHƒı tMH9Åu@L‰D$hL‰$H‰l$pH‰l$H‰t$XH‰t$H‰D$`H‰D$è    ¶\$ H‰Øˆ„$ˆ   é^ÿÿÿ1Àëğè    1Àëå‰éYÿÿÿ‰éãşÿÿÆ„$ˆ    é4ÿÿÿè    é–şÿÿÌÌÌÌÌÌ
+      Æ  Vgo.string."github.com/gopherjs/gopherjs/js"   ì   runtime.eqstring   ò  fgo.string."/vendor/github.com/gopherjs/gopherjs/js"   ¼   runtime.eqstring   ö  $runtime.panicslice   Â  0runtime.morestack_noctxt    ğ  "".autotmp_0007  type.string "".autotmp_0006 type.string "".autotmp_0005  type.string "strings.suffixÂ·3 ?type.string strings.sÂ·2 _type.string "".~r0 Ÿtype.string "".~r0 type.string "".~r1 type.bool "".pkg  ,type.*go/types.Package "ğïğÇï ğ Á  uû TgclocalsÂ·3f5c1f818fa7055d0400cecd34057162 TgclocalsÂ·63ba92e6c81d2d7bf2207e4076c8b23c   ’/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/github.com/gopherjs/gopherjs/compiler/typesutil/typesutil.goş"".IsJsObject  à  àeH‹%    HD$ØH;A†Ç  Hì¨   H‹œ$°   1íH9ëtH‹[H-    H9ë…”  H‹Œ$¸   HÇÀ   < uÆ„$À    HÄ¨   Ã1ÛH‰\$XH‰\$`Hƒù „T  H‹)H‰l$XH‹iH‰l$`H\$XH‹+E1ÀL9ÅtH‹mL    L9Å…  H‹KHÇÀ   H‰L$0< „÷  H‹\$0H‹+Hƒı „İ  H‹M1íH9é„Ç  H‰L$(1ÛHƒù „¯  H‹H‹AH‰T$HH‰D$PHƒø…Ù   H‰”$˜   H‰$H‰„$    H‰D$H-    H‰l$HÇD$   è    H‹L$(¶\$ €û „“   HÇÀ   < t~H‹\$0H‹+Hƒı tk1ÛH‹MH‹m H‰L$hH‰l$pHƒıuGH‰Œ$˜   H‰$H‰¬$    H‰l$H    H‰\$HÇD$   è    ¶\$ ˆœ$À   HÄ¨   ÃÆ„$À    ëî‰E ëÆ„$À    ëß1ÛHƒù „¨   H‹9H‹IH‰|$8H‰L$@H‰|$xH5    H‰´$ˆ   HÇÀ'   H‰Œ$€   H‰„$   H9Á|cH‰ËH)ÃH‰ÍH9ËwNH)İI‰øHƒı tMH9Åu5L‰„$˜   L‰$H‰¬$    H‰l$H‰t$H‰D$è    ¶\$ H‰ØéÏşÿÿ1Àë÷è    1Àëì‰éQÿÿÿ‰éJşÿÿ1Àé«şÿÿ‰E éşÿÿ1Àéœşÿÿ1É1Àéìıÿÿ‰é¥ıÿÿ1É1Àérıÿÿè    éıÿÿÌÌÌÌÌÌÌ
+      j  ,type.*go/types.Pointer   Æ  (type.*go/types.Named   â  Vgo.string."github.com/gopherjs/gopherjs/js"   ˆ   runtime.eqstring   Ô  $go.string."Object"   ú   runtime.eqstring   ¦  fgo.string."/vendor/github.com/gopherjs/gopherjs/js"   „
+   runtime.eqstring   °
+  $runtime.panicslice   À  0runtime.morestack_noctxt   0Ğ  "".autotmp_0022  type.string "".autotmp_0020  type.string "".autotmp_0019 type.string "".autotmp_0016  type.string "".~r0 type.string "strings.suffixÂ·3 ?type.string strings.sÂ·2 _type.string "".~r0 ßtype.string "".~r0 ¿type.string "".pkg ÿ,type.*go/types.Package "".~r0 Ÿ$type.go/types.Type "".named ï(type.*go/types.Named "".~r1  type.bool "".t  $type.go/types.Type .ĞEÏĞïÏĞŠÏ ğ (2[†	  ÃyÅY TgclocalsÂ·9c91d8a91ac42440a3d1507bc8d2e808 TgclocalsÂ·c953e0144d211e28faeaaf2a9cac67c1   ’/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/github.com/gopherjs/gopherjs/compiler/typesutil/typesutil.goş"".init      eH‹%    H;av9¶    €û t¶    €ûuÃè    Æ    è    è    Æ    Ãè    ë±Ì
+      $  "".initdoneÂ·   <  "".initdoneÂ·   R  "runtime.throwinit   b "".initdoneÂ·   n  go/types.init   x  strings.init   „ "".initdoneÂ·   ’  0runtime.morestack_noctxt        P P (P 
+ (( TgclocalsÂ·33cdeccccebe80329f1fdbee7f5874cb TgclocalsÂ·33cdeccccebe80329f1fdbee7f5874cb   ’/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/github.com/gopherjs/gopherjs/compiler/typesutil/typesutil.goş^go.string.hdr."github.com/gopherjs/gopherjs/js"                       Vgo.string."github.com/gopherjs/gopherjs/js"   şVgo.string."github.com/gopherjs/gopherjs/js" @  @github.com/gopherjs/gopherjs/js  şngo.string.hdr."/vendor/github.com/gopherjs/gopherjs/js"             '          fgo.string."/vendor/github.com/gopherjs/gopherjs/js"   şfgo.string."/vendor/github.com/gopherjs/gopherjs/js" P  P/vendor/github.com/gopherjs/gopherjs/js  şTgclocalsÂ·63ba92e6c81d2d7bf2207e4076c8b23c      
+        şTgclocalsÂ·3f5c1f818fa7055d0400cecd34057162             ş,go.string.hdr."Object"                       $go.string."Object"   ş$go.string."Object"   Object  şTgclocalsÂ·c953e0144d211e28faeaaf2a9cac67c1 (  (                 şTgclocalsÂ·9c91d8a91ac42440a3d1507bc8d2e808 (  (                şTgclocalsÂ·33cdeccccebe80329f1fdbee7f5874cb           şTgclocalsÂ·33cdeccccebe80329f1fdbee7f5874cb           ş>"".initdoneÂ·  type.uint8   ş""".IsJsPackageÂ·f              "".IsJsPackage   ş "".IsJsObjectÂ·f              "".IsJsObject   ş"".initÂ·f              "".init   ş0go.string.hdr."go/types"                       (go.string."go/types"   ş(go.string."go/types"    go/types  ş.go.importpath.go/types.                       (go.string."go/types"   ş.go.string.hdr."strings"                       &go.string."strings"   ş&go.string."strings"   strings  ş,go.importpath.strings.                       &go.string."strings"   ÿÿgo13ld 

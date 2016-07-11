@@ -1,0 +1,559 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"main",
+				"main	main()"
+			],
+			[
+				"unused",
+				"unused                                                                  ν"
+			],
+			[
+				"Println",
+				"Println                        func(a ...interface{}) (n int, err error ƒ"
+			],
+			[
+				"Print",
+				"Printf                         func(format string, a ...interface{}) (n ƒ"
+			],
+			[
+				"ReadS",
+				"ReadString                     func(delim byte) (line string, err error ƒ"
+			],
+			[
+				"Stdi",
+				"Stdin                          *os.File                                 ν"
+			],
+			[
+				"P",
+				"PressBellByGuest"
+			],
+			[
+				"ma",
+				"main	main()"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "goblock/webapps/firstwebapp/src/mywebapp/app/tmp/main.go",
+			"settings":
+			{
+				"buffer_size": 3003,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					""
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Build"
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Clean Build"
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Run Tests"
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Run Tagged Tests"
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Run Test at Cursor"
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Run Current Package Tests"
+				],
+				[
+					"Packages/GoTools/GoTools.sublime-build",
+					"Run Last Test"
+				]
+			],
+			[
+				"Packages/GoTools/GoTools.sublime-build",
+				"Build"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					""
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Install"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Cross-Compile (Interactive)"
+				],
+				[
+					"Packages/Golang Build/Go.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Golang Build/Go.sublime-build",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					""
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Run"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Test"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Bench"
+				],
+				[
+					"Packages/Rust/Cargo.sublime-build",
+					"Clean"
+				]
+			],
+			[
+				"Packages/Rust/Cargo.sublime-build",
+				"Run"
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "p",
+		"selected_items":
+		[
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"pakc",
+				"Package Control: Install Package"
+			],
+			[
+				"package control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"Packa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 195.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/wonseobjoe/Documents/Workspace/Golang/bin",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/baek",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/baek/src/example",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/baek/src/example/calc",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/baek/src/main",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/archi",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/archi/bottom",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/entrance",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy",
+		"/Users/wonseobjoe/Documents/Workspace/blocks",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/pkg/darwin_amd64/github.com/agtorre",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/pkg/darwin_amd64/github.com/gorilla",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/pkg/darwin_amd64/mywebapp",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/pkg/darwin_amd64/mywebapp/app",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/mywebapp",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/mywebapp/app",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/mywebapp/app/controllers",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/mywebapp/app/routes",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/mywebapp/app/tmp",
+		"/Users/wonseobjoe/Documents/Workspace/blocks/goblock/webapps/firstwebapp/src/mywebapp/tests"
+	],
+	"file_history":
+	[
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/anonymous_func.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/exam_main.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/addr_mem_loc.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/defer_func.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/control_structure_loop.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/control_structure_if.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/closure.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/channel_buffer.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/channel.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/var_init_assign.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/var_default_value.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/num_type.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/multicore.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy/mem_var.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/anonymous_func.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/exam_main.go",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/SublimeLinter.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoSublime/GoSublime.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoRename/Default.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/Godef.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/GoSublime.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/Godef/Godef.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/golang.sublime-settings",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/control_structure_if.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/defer_func.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/num_type.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/control_structure_loop.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/var_default_value.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/mem_var.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/multicore.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/channel.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/channel_buffer.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/closure.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/var_init_assign.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/defer_test.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/closure_test.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/anonymous_func_test.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/addr_mem_loc.go",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/Godef/messages/install.txt",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoSublime/USAGE.md",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/Golang.sublime-project",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/GoGuru.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoGuru/Default.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoTests-Sublime/GoTests.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoTools/GoTools.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoSublime/Default (OSX).sublime-keymap",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/Default (OSX).sublime-keymap",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/Default/Default (OSX).sublime-keymap",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/webapps/http_webapp1.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/webapps/panic_func.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/webapps/defer_statement.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/mysql_conn.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/mysql_conn2.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/ora_conn.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/oci8.pc",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/entrance/guest.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/class_tbl_schema.sql",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/userinfo_tbl_schema.sql",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn/userinfo_db_schema.sql",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/webapps/edit.html",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/webapps/view.html",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/entrance/ora_conn.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/archi/bottom/base.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/src/blocks/entrance/entrance.txt",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/blocks/entrance/guest.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/mem_var.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/var_default_value.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/control_structure_if.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/examples/addr_mem_loc.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/hello.go",
+		"/Users/wonseobjoe/Documents/Workspace/github_address.txt",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/act_deact.txt",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/blocks/archi/bottom/base.go",
+		"/Users/wonseobjoe/Documents/Workspace/Golang/blocks/main/guest.go",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/main_Complex.py",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/complex_class.py",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/main_MyClass.py",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/main.py",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/scope_test.py",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/MyClass.py",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/Flask/hello.py",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/GoSublime/CHANGELOG.md",
+		"/Users/wonseobjoe/Documents/Workspace/Python3.5/Examples/spanish_dic.py",
+		"/Users/wonseobjoe/Documents/Development/Python3.5/Examples/main.py",
+		"/Users/wonseobjoe/Documents/Development/Python3.5/Examples/hello_python3.5.py",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/Old.Preferences.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/Users/wonseobjoe/Library/Application Support/Sublime Text 3/Packages/User/Python-3.5.sublime-build",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/functions/vm.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/check-available-memory.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/functions/network.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/launch_4GB.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/slave-nodes-create-and-boot.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/prepare-environment.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/master-node-enable-internet.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/master-node-create-and-install.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/create-interfaces.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/actions/clean-previous-installation.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/config.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/functions/product.sh",
+		"/Volumes/EXT_DISK_01/Work Storage/Mirantis ISO file/virtualbox/functions/memory.sh"
+	],
+	"find":
+	{
+		"height": 48.0
+	},
+	"find_in_files":
+	{
+		"height": 96.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"ctrl+p",
+			"folder",
+			"folders",
+			"key",
+			"test_db",
+			"'"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"school_db",
+			"\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "goblock/webapps/firstwebapp/src/mywebapp/app/tmp/main.go",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 3003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/GoTools/GoTools.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2121.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 47.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang":
+	{
+		"height": 146.0
+	},
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang/blocks/entrance":
+	{
+		"height": 146.0
+	},
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang/examples":
+	{
+		"height": 146.0
+	},
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang/examples/roy":
+	{
+		"height": 224.0
+	},
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/dbconn":
+	{
+		"height": 146.0
+	},
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang/examples/roy/webapps":
+	{
+		"height": 146.0
+	},
+	"output.9o:///Users/wonseobjoe/Documents/Workspace/Golang/src/examples/roy":
+	{
+		"height": 146.0
+	},
+	"output.exec":
+	{
+		"height": 125.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.golang_build":
+	{
+		"height": 168.0
+	},
+	"output.gotools_syntax_errors":
+	{
+		"height": 146.0
+	},
+	"pinned_build_system": "Packages/GoSublime/GoSublime.sublime-build",
+	"project": "blocks.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 346.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
